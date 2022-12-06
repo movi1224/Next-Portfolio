@@ -1,0 +1,59 @@
+.gradient_orange {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  /* or 121% */
+
+  letter-spacing: -0.04em;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient_blue {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  /* or 121% */
+
+  letter-spacing: -0.04em;
+  background: linear-gradient(89.97deg, #003585 1.84%, #40a3ff 122.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient_purple {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  /* or 121% */
+
+  letter-spacing: -0.04em;
+  background: linear-gradient(89.97deg, #9691c2 20.84%, #94a72a 152.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient_skyblue {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  /* or 121% */
+
+  letter-spacing: -0.04em;
+  background: linear-gradient(89.97deg, #95c6ff 1.84%, #d6e9ff 152.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

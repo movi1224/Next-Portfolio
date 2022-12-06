@@ -1,0 +1,33 @@
+.blur_01 {
+  user-select: none;
+  position: absolute;
+  width: 1013px;
+  height: 1013px;
+  left: -336px;
+  top: -305px;
+  z-index: 0;
+  background-color: #440e00;
+  filter: blur(20rem);
+}
+
+.title {
+  /* font-family: 'Ubuntu'; */
+  /* position: relative; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 5rem;
+  /* or 121% */
+  letter-spacing: -0.03em;
+}
+
+.gradient_purple {
+  /* position: relative; */
+  font-size: 5.25rem;
+  letter-spacing: -0.04em;
+  /* font-weight: 700; */
+  background: linear-gradient(to top, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
