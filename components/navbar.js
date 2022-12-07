@@ -35,7 +35,7 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ delay: 0.2 }}
-      className="fixed z-10 flex w-96 gap-1 rounded-full bg-black/90 px-5 py-3 font-semibold text-white/50 shadow-3xl max-sm:bottom-8 max-sm:w-80 sm:top-8 ">
+      className="fixed z-20 flex w-96 gap-1 rounded-full bg-black/90 px-5 py-3 font-semibold text-white/50 shadow-3xl max-sm:bottom-8 max-sm:w-80 sm:top-8 ">
       {navItems.map(([title, url, icon], index) => (
         <Link
           key={index}

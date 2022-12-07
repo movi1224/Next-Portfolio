@@ -26,7 +26,7 @@ export default function Proj(props) {
             ? 'm-3 flex w-full flex-col items-end justify-start max-md:items-start [&>*]:md:text-right'
             : 'm-3 flex w-full flex-col items-start justify-start'
         }>
-        <h1 className={styles[titleStyle]}>{title}</h1>
+        <h1 className={`${styles[titleStyle]} text-6xl font-bold max-sm:text-4xl`}>{title}</h1>
         <main className="py-1">
           {/* quote area */}
           <p className={`text-xl ${lora.className}`}>{quote}</p>

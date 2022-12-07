@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { motion, useAnimationControls } from 'framer-motion'
-import styles from '../styles/TextSpan.module.css'
 
 export default function AnimatedText(props) {
   const { background, backgroundClip, WebkitBackgroundClip, WebkitTextFillColor } = props
@@ -51,7 +50,7 @@ export default function AnimatedText(props) {
   return (
     <motion.span
       // style={{ overflow: 'hidden', wordBreak: 'normal', whiteSpace: 'pre-wrap' }}
-      className="flex"
+      className="flex flex-wrap"
       variants={container}
       initial="hidden"
       whileInView="visible">
@@ -90,7 +89,7 @@ function TextSpan({ children }) {
   }
   return (
     <motion.span
-      className={'inline-block leading-normal'}
+      className={'inline-block leading-tight'}
       onMouseOver={() => (!isPlaying ? bouncingEffect() : null)}
       animate={controls}
       onAnimationComplete={() => setIsPlaying(false)}>

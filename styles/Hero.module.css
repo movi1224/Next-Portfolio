@@ -1,15 +1,3 @@
-.blur_01 {
-  user-select: none;
-  position: absolute;
-  width: 1013px;
-  height: 1013px;
-  left: -336px;
-  top: -305px;
-  z-index: 0;
-  background-color: #440e00;
-  filter: blur(20rem);
-}
-
 .title {
   /* font-family: 'Ubuntu'; */
   /* position: relative; */

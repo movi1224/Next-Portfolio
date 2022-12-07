@@ -26,7 +26,7 @@ export default function SkillsView() {
     }
   }, [])
   return (
-    <div className="flex  min-h-screen w-full flex-col justify-center lg:w-5/6 ">
+    <div className="flex min-h-screen w-full flex-col justify-center lg:w-5/6 ">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

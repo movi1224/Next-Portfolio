@@ -16,9 +16,6 @@ export default function HomeView() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="flex h-screen flex-col justify-center text-white/75 sm:items-center [&>*]:relative">
-      {/* Background color effect */}
-      <img className={styles.blur_01} />
-
       {/* Main title using framer motion effect */}
       <div className={`${styles.title} pb-5`}>
         This is&nbsp;
