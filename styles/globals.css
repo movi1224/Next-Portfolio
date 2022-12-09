@@ -55,6 +55,20 @@ button[type='submit']:hover {
   transition: all 0.25s;
 }
 
+button[type='button'] {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 0.5rem 1rem;
+  font-size: large;
+  font-weight: 600;
+  border-radius: 1rem;
+  transition: all 0.25s;
+}
+
+button[type='button']:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 0.25s;
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

@@ -12,6 +12,20 @@
   background-clip: text;
 }
 
+.gradient_red {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+
+  /* or 121% */
+
+  letter-spacing: -0.04em;
+  background: linear-gradient(89.97deg, #e95a5f 0%, #f19aa6 60%, #e66a7b 150%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .gradient_blue {
   font-family: 'Manrope';
   font-style: normal;

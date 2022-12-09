@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
@@ -10,7 +9,6 @@ import {
 } from '@heroicons/react/24/solid'
 
 export default function Navbar() {
-  // const [value, setValue] = React.useState(0)
   const router = useRouter()
   const scrollHandle = (e) => {
     if (e.target.id.includes('#')) {

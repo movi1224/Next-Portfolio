@@ -13,7 +13,7 @@ export default function ProjectsView() {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      className="flex w-full flex-col lg:w-5/6"
+      className="flex w-full flex-col pt-10 lg:w-5/6"
       id="projects">
       <div className="mb-10 flex flex-col items-start">
         <hr className="mb-12 w-20 rounded-full border-none bg-gradient-to-r from-orange pb-3" />
@@ -28,7 +28,11 @@ export default function ProjectsView() {
         </h1>
       </div>
 
-      <div className="ProjectView flex w-full flex-col items-center justify-center gap-20">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="ProjectView flex w-full flex-col items-center justify-center gap-20">
         {allProjects.map((proj, index) => (
           <Proj
             key={index}
@@ -36,11 +40,11 @@ export default function ProjectsView() {
             src={proj.src}
             quote={proj.quote}
             titleStyle={proj.titleStyle}
-            reverse={index % 2 !== 0}>
-            {proj.content}
-          </Proj>
+            reverse={index % 2 !== 0}
+            content={proj.content}
+            tools={proj.tools}></Proj>
         ))}
-      </div>
+      </motion.div>
     </motion.div>
   )
 }

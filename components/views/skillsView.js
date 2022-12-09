@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
-import AnimatedText from '../animatedText'
 import { skills } from '../../public/utils'
 import TagCloud from 'TagCloud'
+import AnimatedText from '../animatedText'
 import ExperienceView from './exprienceView'
 import { Ubuntu } from '@next/font/google'
 const ubuntu = Ubuntu({
@@ -27,12 +27,11 @@ export default function SkillsView() {
   }, [])
   return (
     <div className="flex min-h-screen w-full flex-col justify-center lg:w-5/6 ">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="SkillsView flex gap-10 max-lg:flex-col [&>*]:relative">
-        <main className="flex flex-1 flex-col justify-start text-purple-100 lg:text-lg">
+      <div className="SkillsView flex gap-10 max-lg:flex-col [&>*]:relative">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="flex flex-1 flex-col justify-start text-purple-100 lg:text-lg">
           <hr className="mb-12 w-20 rounded-full border-none bg-gradient-to-r from-orange pb-3" />
 
           <h1 className={`pb-8 text-6xl ${ubuntu.className}`}>
@@ -57,10 +56,10 @@ export default function SkillsView() {
             I know how to collaborate and communicate with them efficiently and ready to take part
             in a full software development cycle.
           </p>
-        </main>
+        </motion.div>
 
-        <span className="tagcloud relative flex flex-1 justify-center overflow-hidden font-bold [&>*]:text-orange"></span>
-      </motion.div>
+        <span className="tagcloud relative flex flex-1 justify-center overflow-hidden font-bold [&>*]:text-lg [&>*]:text-orange"></span>
+      </div>
 
       <ExperienceView />
     </div>

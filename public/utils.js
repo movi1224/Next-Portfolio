@@ -6,13 +6,32 @@ export const allProjects = [
     quote:
       '“Enriches people’s life by providing high-quality recipes that make the most of their limited time and ingredients”',
     content: (
-      <>
-        <p>
-          A Progressive Web Application that provided recipes based on ingredients, time and
-          servings. Supports different devices.
-        </p>
-        <p>Vue, CSS, HTML, Responsive Web Design, Figma, BootStrap, ElementUI</p>
-      </>
+      <p>
+        A Progressive Web App(PWA) that tells users the possible dishes they can make in a given
+        amount of time. Users would know how to save money and prevent wasting food by entering what
+        they have as ingredients. By providing step-by-step instructions visually, Facipe helps
+        users cook better.
+      </p>
+    ),
+    tools: <p>Vue, CSS, HTML, Responsive Web Design, Figma, BootStrap, ElementUI</p>,
+  },
+  {
+    title: 'Yelp Camp Web App',
+    titleStyle: 'gradient_red',
+    src: '/yelpcamp.jpg',
+    quote: '“A real-industry-like application in Yelp style”',
+    content: (
+      <p>
+        Designed and Implemented both Frontend and Backend for a Yelp-like website for campgrounds,
+        includes search/review/create campgrounds features. Users are able to search desired
+        campgrounds by name or location and sort by highest ratings, reviews and prices just like
+        Yelp, and also create/edit/remove a campground as the camp owner with all profiles stored.
+      </p>
+    ),
+    tools: (
+      <p className="text-red">
+        Javascript, HTML, CSS, NodeJS, EJS, Express, MongoDB, Bootstrap, JWT
+      </p>
     ),
   },
   {
@@ -20,48 +39,44 @@ export const allProjects = [
     titleStyle: 'gradient_blue',
     src: '/ford.png',
     quote:
-      '“Enriches people’s life by providing high-quality recipes that make the most of their limited time and ingredients”',
+      '“Our platform includes an intuitive, mobile, and easy-to-use chatbots, as well as a web metrics dashboard.”',
     content: (
-      <>
-        <p>
-          A Progressive Web Application that provided recipes based on ingredients, time and
-          servings. Supports different devices.
-        </p>
-        <p>Made by Vue, CSS, Responsive Design</p>
-      </>
+      <p>
+        Users can ask chatbots for information on a variety of topics, including software products
+        and website user metrics. Also scheduling regular report to stay up to date on the health
+        and overall performance of Ford’s service. For a more comprehensive view, employees can use
+        our web dashboard as a monitor of the health of services.
+      </p>
     ),
-  },
-  {
-    title: 'Global Terrorism Visualization',
-    titleStyle: 'gradient_purple',
-    src: '/d3.png',
-    quote:
-      '“Enriches people’s life by providing high-quality recipes that make the most of their limited time and ingredients”',
-    content: (
-      <>
-        <p>
-          A Progressive Web Application that provided recipes based on ingredients, time and
-          servings. Supports different devices.
-        </p>
-        <p>Made by Vue, CSS, Responsive Design</p>
-      </>
-    ),
+    tools: <p>NodeJS, Azure, BotkitJS, Ajax, HTML, CSS</p>,
   },
   {
     title: 'Assurant E-Commerce ',
     titleStyle: 'gradient_skyblue',
     src: '/assurant.png',
-    quote:
-      '“Enriches people’s life by providing high-quality recipes that make the most of their limited time and ingredients”',
+    quote: '“Our global sales platform aims to simplify and humanize the insurance sales funnel.”',
     content: (
-      <>
-        <p>
-          A Progressive Web Application that provided recipes based on ingredients, time and
-          servings. Supports different devices.
-        </p>
-        <p>Made by Vue, CSS, Responsive Design</p>
-      </>
+      <p>
+        A progressive web application, covers end-to-end consumer sales flow from the landing
+        homepage to the final sales confirmation. Users are able to choose an insurance plan, make
+        purchase, track service status.
+      </p>
     ),
+    tools: <p>NextJS, React, SCSS, TypeScript, Storybook, Redux</p>,
+  },
+  {
+    title: 'Global Terrorism Visualization',
+    titleStyle: 'gradient_purple',
+    src: '/d3.png',
+    content: (
+      <p>
+        A dynamic web application of data visualization utilizing the Global Terrorism Database to
+        summarize and categorize the terrorism activities all around the world, Users could locate
+        anywhere in a dynamic world map to check the information. Besides, an animated comparison
+        chart to display different terrorism groups expanding rate by time or location.
+      </p>
+    ),
+    tools: <p>D3.js, HTML, CSS, JavaScript, Python</p>,
   },
 ]
 

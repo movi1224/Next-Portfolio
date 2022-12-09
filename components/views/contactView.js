@@ -28,7 +28,7 @@ export default function ContactView() {
               WebkitTextFillColor="transparent"
             />
           </h1>
-          <p className="pb-24">
+          <p>
             I'm interested in any new opportunities - especially ambitious or fun projects. However,
             if you have any other request or just want to talk to me, don't hesitate to use the form
             to message me!

@@ -1,4 +1,5 @@
 import Navbar from './navbar'
+import Footer from './views/footerView'
 import styles from '../styles/Layout.module.css'
 export default function Layout({ children }) {
   return (
@@ -7,6 +8,7 @@ export default function Layout({ children }) {
       {/* Background color effect */}
       <img className={styles.background} />
       {children}
+      <Footer />
     </div>
   )
 }
