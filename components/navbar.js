@@ -27,7 +27,7 @@ export default function Navbar() {
     ['Home', '/', <UserIcon className="h-5 w-5" />],
     ['Projects', '/#projects', <Squares2X2Icon className="h-5 w-5" />],
     ['Resume', '/resume', <DocumentTextIcon className="h-5 w-5" />],
-    ['Contact', '/', <ChatBubbleLeftEllipsisIcon className="h-5 w-5" />],
+    ['Contact', '/#contact', <ChatBubbleLeftEllipsisIcon className="h-5 w-5" />],
   ]
 
   return (

@@ -4,7 +4,7 @@ import AnimatedText from '../components/animatedText'
 import { Ubuntu } from '@next/font/google'
 import { motion } from 'framer-motion'
 
-const vt = Ubuntu({
+const ubuntu = Ubuntu({
   weight: '700',
   display: 'auto',
 })
@@ -15,7 +15,7 @@ export default function Resume() {
       <motion.div className="z-10 flex w-full flex-col items-center pt-20 md:w-5/6 ">
         <div className="title flex flex-col items-start justify-start self-start">
           <hr className="mb-12 w-20 rounded-full border-none bg-gradient-to-r from-orange pb-3" />
-          <h1 className={`pb-8 text-6xl ${vt.className}`}>
+          <h1 className={`pb-8 text-6xl ${ubuntu.className}`}>
             <AnimatedText
               text="Resume"
               background="linear-gradient(to top, #ae67fa -20%, #f49867 80%)"

@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import HeroView from '../components/views/heroView'
 import SkillsView from '../components/views/skillsView'
 import ProjectsView from '../components/views/projectsView'
-import Navbar from '../components/navbar'
+import ContactView from '../components/views/contactView'
 export default function Home() {
   return (
     <Layout>
@@ -18,10 +18,10 @@ export default function Home() {
         </Head>
 
         <main className={`${styles.main}`}>
-          <Navbar />
           <HeroView />
           <SkillsView />
           <ProjectsView />
+          <ContactView />
         </main>
       </div>
     </Layout>

@@ -30,8 +30,29 @@ a {
 }
 
 p {
-  padding: 0.25rem 0;
+  padding: 0.5rem 0;
   letter-spacing: -0.02em;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+
+button[type='submit'] {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 0.5rem;
+  font-size: large;
+  font-weight: 600;
+  border: 1px solid white;
+  transition: all 0.25s;
+}
+
+button[type='submit']:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 0.25s;
 }
 
 /* @media (prefers-color-scheme: dark) {

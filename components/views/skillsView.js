@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 import AnimatedText from '../animatedText'
 import { skills } from '../../public/utils'
 import TagCloud from 'TagCloud'
-import ExperienceViewe from './exprienceView'
+import ExperienceView from './exprienceView'
 import { Ubuntu } from '@next/font/google'
-const vt = Ubuntu({
+const ubuntu = Ubuntu({
   weight: '700',
   display: 'auto',
 })
@@ -35,7 +35,7 @@ export default function SkillsView() {
         <main className="flex flex-1 flex-col justify-start text-purple-100 lg:text-lg">
           <hr className="mb-12 w-20 rounded-full border-none bg-gradient-to-r from-orange pb-3" />
 
-          <h1 className={`pb-8 text-6xl ${vt.className}`}>
+          <h1 className={`pb-8 text-6xl ${ubuntu.className}`}>
             <AnimatedText
               text="Skills & Experience"
               background="linear-gradient(to top, #ae67fa -20%, #f49867 80%)"
@@ -62,7 +62,7 @@ export default function SkillsView() {
         <span className="tagcloud relative flex flex-1 justify-center overflow-hidden font-bold [&>*]:text-orange"></span>
       </motion.div>
 
-      <ExperienceViewe />
+      <ExperienceView />
     </div>
   )
 }

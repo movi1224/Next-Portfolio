@@ -4,7 +4,7 @@ import styles from '../../styles/Hero.module.css'
 import AnimatedText from '../animatedText'
 import { motion } from 'framer-motion'
 import { Ubuntu } from '@next/font/google'
-const vt = Ubuntu({
+const ubuntu = Ubuntu({
   weight: '700',
   display: 'auto',
 })
@@ -19,7 +19,7 @@ export default function HomeView() {
       {/* Main title using framer motion effect */}
       <div className={`${styles.title} pb-5`}>
         This is&nbsp;
-        <h1 className={`${vt.className} inline-block`}>
+        <h1 className={`${ubuntu.className} inline-block`}>
           <AnimatedText
             text="Victor"
             background="linear-gradient(to top, #ae67fa -20%, #f49867 80%)"
@@ -28,7 +28,6 @@ export default function HomeView() {
             WebkitTextFillColor="transparent"
           />
         </h1>
-        {/* </motion.span> */}
       </div>
 
       {/* Sub title using typer animation */}

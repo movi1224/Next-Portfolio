@@ -1,10 +1,10 @@
 import React from 'react'
 import { VT323 } from '@next/font/google'
-
 const vt = VT323({
   weight: '400',
   display: 'auto',
 })
+
 const TYPING_SPEED = 150
 const DELETING_SPEED = 30
 export default class Typer extends React.Component {
