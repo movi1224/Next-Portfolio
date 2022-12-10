@@ -1,20 +1,22 @@
 import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { skills } from '../../public/utils'
-import TagCloud from 'TagCloud'
+import tagSphere from '../tagSphere'
 import AnimatedText from '../animatedText'
-import ExperienceView from './exprienceView'
+import Card from '../card'
+import { jobs } from '../../public/utils'
 import { Ubuntu } from '@next/font/google'
 const ubuntu = Ubuntu({
   weight: '700',
   display: 'auto',
+  subsets: 'latin',
 })
 export default function SkillsView() {
   useEffect(() => {
     return () => {
-      let prev = document.querySelector('.tagcloud')
+      let prev = document.querySelector('.tagsphere')
       prev ? (prev.children.length > 0 ? prev.removeChild(prev.firstChild) : null) : null
-      const container = '.tagcloud'
+      const container = '.tagsphere'
       const texts = skills
       const options = {
         radius: 300,
@@ -22,7 +24,7 @@ export default function SkillsView() {
         initSpeed: 'fast',
         keep: true,
       }
-      TagCloud(container, texts, options)
+      tagSphere(container, texts, options)
     }
   }, [])
   return (
@@ -58,10 +60,20 @@ export default function SkillsView() {
           </p>
         </motion.div>
 
-        <span className="tagcloud relative flex flex-1 justify-center overflow-hidden font-bold [&>*]:text-lg [&>*]:text-orange"></span>
+        <span className="tagsphere relative flex flex-1 cursor-default select-none justify-center overflow-hidden font-bold [&>*]:text-lg [&>*]:text-orange"></span>
       </div>
 
-      <ExperienceView />
+      <div className="Experience mb-20 flex gap-5 py-10 max-lg:flex-col">
+        {jobs.map((job, index) => (
+          <Card
+            key={index}
+            job={job.title}
+            company={job.company}
+            time={job.time}
+            content={job.content}
+          />
+        ))}
+      </div>
     </div>
   )
 }

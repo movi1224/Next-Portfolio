@@ -7,6 +7,7 @@ import { Ubuntu } from '@next/font/google'
 const ubuntu = Ubuntu({
   weight: '700',
   display: 'auto',
+  subsets: 'latin',
 })
 
 export default function HomeView() {

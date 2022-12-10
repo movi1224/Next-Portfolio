@@ -6,6 +6,7 @@ import styles from '../../styles/Form.module.css'
 const ubuntu = Ubuntu({
   weight: '700',
   display: 'auto',
+  subsets: 'latin',
 })
 
 export default function ContactView() {

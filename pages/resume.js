@@ -8,6 +8,7 @@ import { motion } from 'framer-motion'
 const ubuntu = Ubuntu({
   weight: '700',
   display: 'auto',
+  subsets: 'latin',
 })
 
 export default function Resume() {
