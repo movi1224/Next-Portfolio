@@ -8,6 +8,7 @@ import { LinkIcon } from '@heroicons/react/24/solid'
 const lora = Lora({
   weight: '400',
   style: 'italic',
+  subsets: 'latin',
 })
 export default function Proj(props) {
   const { title, src, reverse, titleStyle, quote, content, tools } = props

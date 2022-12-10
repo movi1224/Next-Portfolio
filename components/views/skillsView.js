@@ -13,19 +13,17 @@ const ubuntu = Ubuntu({
 })
 export default function SkillsView() {
   useEffect(() => {
-    return () => {
-      let prev = document.querySelector('.tagsphere')
-      prev ? (prev.children.length > 0 ? prev.removeChild(prev.firstChild) : null) : null
-      const container = '.tagsphere'
-      const texts = skills
-      const options = {
-        radius: 300,
-        maxSpeed: 'fast',
-        initSpeed: 'fast',
-        keep: true,
-      }
-      tagSphere(container, texts, options)
+    let prev = document.querySelector('.tagsphere')
+    prev ? (prev.children.length > 0 ? prev.removeChild(prev.firstChild) : null) : null
+    const container = '.tagsphere'
+    const texts = skills
+    const options = {
+      radius: 300,
+      maxSpeed: 'fast',
+      initSpeed: 'fast',
+      keep: true,
     }
+    tagSphere(container, texts, options)
   }, [])
   return (
     <div className="flex min-h-screen w-full flex-col justify-center lg:w-5/6 ">

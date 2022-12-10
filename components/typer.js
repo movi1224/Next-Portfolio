@@ -3,6 +3,7 @@ import { VT323 } from '@next/font/google'
 const vt = VT323({
   weight: '400',
   display: 'auto',
+  subsets: 'latin',
 })
 
 const TYPING_SPEED = 150
