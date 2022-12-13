@@ -20,15 +20,13 @@ export default function Proj(props) {
           ? 'flex flex-row-reverse items-center justify-center max-md:flex-col max-sm:w-full sm:gap-5'
           : 'flex items-center justify-center max-md:flex-col max-sm:w-full sm:gap-5'
       }>
-      <motion.div className="m-3 flex w-full flex-auto justify-end rounded-lg max-sm:justify-center">
+      <motion.div className="m-3 flex w-full flex-auto justify-center rounded-lg max-sm:justify-center">
         <Image className="rounded-lg" src={src} alt="" width={800} height={100} loading="lazy" />
       </motion.div>
 
       <div
         className={
-          reverse
-            ? 'm-3 flex w-full flex-col items-end justify-start max-md:items-start [&>*]:md:text-right'
-            : 'm-3 flex w-full flex-col items-start justify-start'
+          reverse ? 'm-3 flex w-full flex-col [&>*]:md:text-right' : 'm-3 flex w-full flex-col'
         }>
         <h1 className={`${styles[titleStyle]} text-6xl font-bold max-sm:text-4xl`}>{title}</h1>
         <main className="py-1">
