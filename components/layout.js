@@ -6,7 +6,7 @@ export default function Layout({ children }) {
     <div className="flex flex-col items-center justify-center px-8">
       <Navbar />
       {/* Background color effect */}
-      <img className={styles.background} />
+      <img className={styles.background} alt="background" />
       {children}
       <Footer />
     </div>

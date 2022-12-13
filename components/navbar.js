@@ -39,6 +39,7 @@ export default function Navbar() {
           key={index}
           className="flex w-full flex-col items-center justify-center text-xs transition ease-in hover:text-white focus:text-white active:text-purple-600"
           href={url}
+          prefetch={false}
           onClick={scrollHandle}
           id={url}>
           {icon}

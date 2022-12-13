@@ -4,6 +4,7 @@ const vt = VT323({
   weight: '400',
   display: 'auto',
   subsets: 'latin',
+  display: 'swap',
 })
 
 const TYPING_SPEED = 150
@@ -47,7 +48,7 @@ export default class Typer extends React.Component {
 
   render() {
     return (
-      <div className="inline font-mono font-medium [&>*]:text-2xl">
+      <div className="inline font-mono font-medium text-white/75 [&>*]:text-2xl">
         <span className={`${vt.className}`}>{this.props.heading}</span>
         <span className={`${vt.className}`}>{this.state.text}</span>
         <span className="animate-blink border-l-2 border-solid "></span>

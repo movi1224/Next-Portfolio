@@ -11,6 +11,7 @@ body {
   background-color: rgb(38, 31, 48);
   color: whitesmoke;
   scroll-behavior: smooth;
+  font-display: swap;
 }
 
 h1 {

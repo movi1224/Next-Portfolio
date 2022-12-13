@@ -9,6 +9,7 @@ const lora = Lora({
   weight: '400',
   style: 'italic',
   subsets: 'latin',
+  display: 'swap',
 })
 export default function Proj(props) {
   const { title, src, reverse, titleStyle, quote, content, tools } = props
@@ -20,7 +21,7 @@ export default function Proj(props) {
           : 'flex items-center justify-center max-md:flex-col max-sm:w-full sm:gap-5'
       }>
       <motion.div className="m-3 flex w-full flex-auto justify-end rounded-lg max-sm:justify-center">
-        <Image className="rounded-lg" src={src} alt="" width={800} height={100} />
+        <Image className="rounded-lg" src={src} alt="" width={800} height={100} loading="lazy" />
       </motion.div>
 
       <div

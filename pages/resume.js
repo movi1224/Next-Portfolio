@@ -9,6 +9,7 @@ const ubuntu = Ubuntu({
   weight: '700',
   display: 'auto',
   subsets: 'latin',
+  display: 'swap',
 })
 
 export default function Resume() {
@@ -27,6 +28,7 @@ export default function Resume() {
               backgroundClip="text"
               WebkitBackgroundClip="text"
               WebkitTextFillColor="transparent"
+              TextFillColor="transparent"
             />
             <motion.button
               whileHover={{ scale: 1.02 }}

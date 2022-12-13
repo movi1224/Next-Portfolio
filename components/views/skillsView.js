@@ -10,6 +10,7 @@ const ubuntu = Ubuntu({
   weight: '700',
   display: 'auto',
   subsets: 'latin',
+  display: 'swap',
 })
 export default function SkillsView() {
   useEffect(() => {
@@ -41,6 +42,7 @@ export default function SkillsView() {
               backgroundClip="text"
               WebkitBackgroundClip="text"
               WebkitTextFillColor="transparent"
+              TextFillColor="transparent"
             />
           </h1>
           <p>

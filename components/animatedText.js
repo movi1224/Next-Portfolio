@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { motion, useAnimationControls } from 'framer-motion'
 
 export default function AnimatedText(props) {
-  const { background, backgroundClip, WebkitBackgroundClip, WebkitTextFillColor } = props
+  const { background, backgroundClip, WebkitBackgroundClip, WebkitTextFillColor, TextFillColor } =
+    props
   const letters = Array.from(props.text)
   const container = {
     hidden: { opacity: 0 },
@@ -33,6 +34,7 @@ export default function AnimatedText(props) {
       backgroundClip: backgroundClip,
       WebkitBackgroundClip: WebkitBackgroundClip,
       WebkitTextFillColor: WebkitTextFillColor,
+      TextFillColor: TextFillColor,
     },
     hidden: {
       opacity: 0,

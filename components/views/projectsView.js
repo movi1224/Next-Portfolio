@@ -8,6 +8,7 @@ const ubuntu = Ubuntu({
   weight: '700',
   display: 'auto',
   subsets: 'latin',
+  display: 'swap',
 })
 export default function ProjectsView() {
   return (
@@ -25,6 +26,7 @@ export default function ProjectsView() {
             backgroundClip="text"
             WebkitBackgroundClip="text"
             WebkitTextFillColor="transparent"
+            TextFillColor="transparent"
           />
         </h1>
       </div>

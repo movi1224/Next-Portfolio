@@ -9,6 +9,7 @@ const ubuntu = Ubuntu({
   weight: '700',
   display: 'auto',
   subsets: 'latin',
+  display: 'swap',
 })
 
 export default function HomeView() {
@@ -24,10 +25,10 @@ export default function HomeView() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="flex min-h-screen flex-col justify-center text-white/75 sm:items-center [&>*]:relative">
+        className="flex min-h-screen flex-col justify-center  sm:items-center [&>*]:relative">
         {/* Main title using framer motion effect */}
         <div className={`${styles.title} pb-5`}>
-          This is&nbsp;
+          <span className="text-white/75">This is</span>&nbsp;
           <h1 className={`${ubuntu.className} inline-block`}>
             <AnimatedText
               text="Victor"
@@ -35,6 +36,7 @@ export default function HomeView() {
               backgroundClip="text"
               WebkitBackgroundClip="text"
               WebkitTextFillColor="transparent"
+              TextFillColor="transparent"
             />
           </h1>
         </div>

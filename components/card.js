@@ -1,11 +1,11 @@
 import React from 'react'
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Ubuntu } from '@next/font/google'
 const ubuntu = Ubuntu({
   weight: '700',
   display: 'auto',
   subsets: 'latin',
+  display: 'swap',
 })
 export default function Card(props) {
   const { job, company, time, content } = props

@@ -7,6 +7,7 @@ const ubuntu = Ubuntu({
   weight: '700',
   display: 'auto',
   subsets: 'latin',
+  display: 'swap',
 })
 
 export default function ContactView() {
@@ -27,6 +28,7 @@ export default function ContactView() {
               backgroundClip="text"
               WebkitBackgroundClip="text"
               WebkitTextFillColor="transparent"
+              TextFillColor="transparent"
             />
           </h1>
           <p>
