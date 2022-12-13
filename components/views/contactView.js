@@ -43,15 +43,15 @@ export default function ContactView() {
           action="https://getform.io/f/630049fd-09b4-474f-9ed9-e2462505c51f"
           method="POST">
           <div className={styles.contact_form_row}>
-            <input type="text" name="name" placeholder="Name" />
-            <input type="email" name="email" placeholder="Email" />
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
           </div>
 
           <div className={styles.contact_form_row}>
-            <input rows="5" type="text" name="subject" placeholder="Subject" />
+            <input type="text" name="subject" placeholder="Subject" required />
           </div>
           <div className={styles.contact_form_row}>
-            <textarea rows="5" name="message" placeholder="Message" />
+            <textarea rows="5" name="message" placeholder="Message" required />
           </div>
           {/* <!-- add hidden Honeypot input to prevent spams --> */}
           {/* <input type="hidden" name="_gotcha" style="display:none !important" /> */}
